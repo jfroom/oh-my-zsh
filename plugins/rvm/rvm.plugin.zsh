@@ -1,4 +1,8 @@
+#source /Users/jfroom/.rvm/scripts/rvm
 fpath=($rvm_path/scripts/zsh/Completion $fpath)
+
+#export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 
 alias rubies='rvm list rubies'
 alias gemsets='rvm gemset list'
