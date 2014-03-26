@@ -6,3 +6,5 @@ if [[ ! -e ~/.nvm ]]; then
 fi
 
 emulate zsh -c '. ~/.nvm/nvm.sh'
+
+export NODE_PATH=${NVM_PATH}:${NVM_PATH}_modules
