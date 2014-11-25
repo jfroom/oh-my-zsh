@@ -16,7 +16,7 @@ else
 fi
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 
-PROMPT="$fg[white]${current_dir} ${git_branch}% $fg[red]⌘ %{$reset_color%}"
+PROMPT="$fg[white]${current_dir} ${git_branch}% $fg[red]⌘  %{$reset_color%}"
 RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
