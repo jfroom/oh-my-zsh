@@ -1,0 +1,31 @@
+require 'irb/completion'
+require 'pp'
+
+#IRB.conf[:AUTO_INDENT]=true
+#IRB.conf[:RETURN] = ""
+
+IRB.conf[:PROMPT][:CUSTOM] = {
+  :PROMPT_I => "> ",
+  :PROMPT_S => "%l> ",
+  :PROMPT_C => ".. ",
+  :PROMPT_N => ".. ",
+  :RETURN => ""
+}
+IRB.conf[:PROMPT_MODE] = :CUSTOM
+IRB.conf[:AUTO_INDENT] = true
+
+def pbcopy(input)
+  str = input.to_s
+  IO.popen('pbcopy', 'w') { |f| f << str }
+  str
+end
+
+def pbpaste
+  `pbpaste`
+end
+
+def link
+  s = "http://0.0.0.0:3000/towers/#{Tower.last.id}"
+  puts s
+  pbcopy s
+end

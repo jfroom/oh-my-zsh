@@ -39,6 +39,12 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.secrets
 
+# IRB
+if [ ! -f ~/.irbrc ]; then
+  ln -s $ZSH/custom/plugins/ruby/irbrc.symlink ~/.irbrc
+  echo "Symlinking irbrc"
+fi
+
 # disable correcting of comamnds query feature
 unsetopt correct_all
 
