@@ -1,9 +1,6 @@
 require 'irb/completion'
 require 'pp'
 
-#IRB.conf[:AUTO_INDENT]=true
-#IRB.conf[:RETURN] = ""
-
 IRB.conf[:PROMPT][:CUSTOM] = {
   :PROMPT_I => "> ",
   :PROMPT_S => "%l> ",
@@ -25,7 +22,7 @@ def pbpaste
 end
 
 def link
-  s = "http://0.0.0.0:3000/towers/#{Tower.last.id}"
+  s = "http://localhost:3000/towers/#{Tower.last.id}"
   puts s
   pbcopy s
 end
