@@ -33,7 +33,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouservm )
-plugins=(git node npm nvm rbenv bundler rails android weinre osx-server brew extract ruby rails z sublime postgresql)
+plugins=(git node npm nvm rbenv bundler rails android weinre osx-server brew extract ruby rails z sublime postgresql zearn)
 
 source $ZSH/oh-my-zsh.sh
 
