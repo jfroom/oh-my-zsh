@@ -1,2 +1,2 @@
-export DENT_SKIP_JASMINE='true'
-echo 'zearn'
+export DENT_SKIP_JASMINE=true
+export DENT_MUTE_AUDIO=true
