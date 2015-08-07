@@ -1,2 +1,3 @@
 export DENT_SKIP_JASMINE=true
-export DENT_MUTE_AUDIO=true
+export DENT_MUTE_AUDIO=false
+export DENT_DEBUG_ASSETS=false
