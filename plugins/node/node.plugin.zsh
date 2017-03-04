@@ -4,5 +4,6 @@
 export NODE_PATH=usr/local/lib/node:/usr/local/lib/node_modules
 
 function node-docs {
-	open "http://nodejs.org/docs/$(node --version)/api/all.html#all_$1"
+  local section=${1:-all}
+  open_command "https://nodejs.org/docs/$(node --version)/api/$section.html"
 }
