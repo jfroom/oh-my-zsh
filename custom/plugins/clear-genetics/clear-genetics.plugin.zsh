@@ -1,0 +1,1 @@
+export WEBPACK_HOT_RELOAD=false

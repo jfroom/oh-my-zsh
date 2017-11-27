@@ -48,7 +48,8 @@ ZSH_THEME="jfroom"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git node npm nvm rbenv bundler rails android weinre osx-server brew extract ruby rails z lang sublime postgresql docker-alias docker-compose)
+plugins=(git node npm nvm rbenv bundler rails android weinre brew extract ruby rails z lang sublime postgresql docker-alias docker-compose php mysql pyenv clear-genetics)
+# autoload -U compinit && compinit
 
 
 source $ZSH/oh-my-zsh.sh
