@@ -1,4 +1,4 @@
-export RBENV_VERSION=2.4.0
+export RBENV_VERSION=2.4.2
 
 _homebrew-installed() {
   type brew &> /dev/null
